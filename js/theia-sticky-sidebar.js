@@ -61,7 +61,7 @@
                 return true;
             }
 
-            if ($('body').width() < options.minWidth) {
+            if (window.innerWidth < options.minWidth) {
                 return false;
             }
 
@@ -160,7 +160,7 @@
                     }
 
                     // Stop if the window is too small.
-                    if ($('body').width() < o.options.minWidth) {
+                    if (window.innerWidth < o.options.minWidth) {
                         resetSidebar();
                         return;
                     }
